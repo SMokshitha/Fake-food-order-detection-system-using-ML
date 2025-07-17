@@ -79,7 +79,7 @@ def predict():
         # Format the result for display
         output = '{0:.{1}f}'.format(fraud_probability, 2)
         # Generate result message based on probability
-        if fraud_probability > 0.5:
+        if fraud_probability > 0.6:
             result_message = f"Warning: High likelihood of fraud! Fraud probability is {output}."
             advice = "Consider verifying this order."
         else:
